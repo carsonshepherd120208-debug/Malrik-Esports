@@ -1,0 +1,121 @@
+Malrik Esports site
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malrik Esports</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #f5f5f5;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* ?? Animated gradient background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(-45deg, #ff003c, #0d0d0d, #b3001b, #1a1a1a);
+      background-size: 400% 400%;
+      animation: gradient 12s ease infinite;
+      z-index: -1;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #ff003c;
+      text-shadow: 0 0 15px rgba(255,0,60,0.7);
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 15px;
+      color: #ddd;
+    }
+
+    .socials {
+      margin: 60px 0;
+    }
+
+    .socials h2 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      color: #ff003c;
+    }
+
+    .socials a {
+      display: inline-block;
+      margin: 15px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .twitter {
+      background: #1da1f2;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(29,161,242,0.6);
+    }
+
+    .discord {
+      background: #5865f2;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(88,101,242,0.6);
+    }
+
+    .socials a:hover {
+      transform: scale(1.08);
+      opacity: 0.9;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 25px;
+      font-size: 0.9rem;
+      color: #aaa;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Malrik Esports</h1>
+    <p>Compete. Dominate. Conquer.</p>
+  </header>
+
+  <section class="socials">
+    <h2>Follow Us</h2>
+    <a class="twitter" href="https://x.com/Malrik_Esports" target="_blank">Twitter</a>
+    <a class="discord" href="https://discord.com/invite/EkcyybsXFU" target="_blank">Discord</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Malrik Esports. All Rights Reserved.
+  </footer>
+</body>
+</html>
